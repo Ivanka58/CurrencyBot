@@ -29,5 +29,6 @@ jobs:
     - name: Run the bot
       env:
         TG_TOKEN: ${{ secrets.TG_TOKEN }} # Переменная окружения для токена
+        EXCHANGE_RATE_API_KEY: ${{ secrets.EXCHANGE_RATE_API_KEY }} # Переменная окружения для API ключа
       run: |
         python bot.py
